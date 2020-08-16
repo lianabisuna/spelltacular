@@ -1,6 +1,15 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
+      <v-img
+        alt="Vuetify Logo"
+        class="shrink mr-2"
+        contain
+        :src="require('@/assets/logo.png')"
+        transition="scale-transition"
+        width="40"
+      />
+      <!-- <v-img :src="require('@/assets/spelltacular-logo.png')" alt="spelltacular-logo"></v-img> -->
       <v-toolbar-title class="font-weight-black">Spelltacular</v-toolbar-title>
 
       <v-spacer></v-spacer>
