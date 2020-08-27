@@ -9,14 +9,11 @@
         transition="scale-transition"
         width="40"
       />
-      <!-- <v-img :src="require('@/assets/spelltacular-logo.png')" alt="spelltacular-logo"></v-img> -->
       <v-toolbar-title class="font-weight-black">Spelltacular</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        icon
-      >
+      <v-btn icon>
         <v-icon>mdi-home</v-icon>
       </v-btn>
     </v-app-bar>
@@ -28,13 +25,11 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
 
   components: {
-    // HelloWorld
   },
 
   data: () => ({

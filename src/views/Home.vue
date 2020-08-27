@@ -12,7 +12,7 @@
           "
           @click="speak()"
           >
-          <main-button color="red" icon="mdi-volume-high" caption="speak"/>
+          <main-button color="red" icon="mdi-volume-high" caption="speak" ref="refToElement"/>
         </v-col>
         <v-col class="d-flex child-flex"
           :cols="
@@ -27,7 +27,7 @@
           <main-button color="green" icon="mdi-refresh" caption="next"/>
         </v-col>
       </v-row>
-      <v-row dense justify="center">
+      <v-row justify="center">
         <v-col class="d-flex child-flex"
           :cols="
             $vuetify.breakpoint.xsOnly
@@ -36,7 +36,7 @@
                 ? 10
                 : 10
           ">
-          <word v-bind:spelling="spelling" @clear="clear()"/>
+          <word v-bind:spelling="spelling" @clear="clear()" @remove="remove"/>
         </v-col>
         <v-col class="d-flex child-flex"
           :cols="
@@ -91,6 +91,8 @@ var randomWords = require('random-words');
 var clickSound = new Audio(require('@/assets/click.wav'));
 var correctSound = new Audio(require('@/assets/correct.wav'));
 var wrongSound = new Audio(require('@/assets/wrong.mp3'));
+var removeSound = new Audio(require('@/assets/remove.wav'));
+var clearSound = new Audio(require('@/assets/clear.wav'));
 
 export default {
   name: "Home",
@@ -109,6 +111,11 @@ export default {
       for (var x = this.spelling.length; x > 0; x--) {
         this.spelling.pop();
       }
+      clearSound.play();
+    },
+    remove(value) {
+      this.spelling.splice(value, 1);
+      removeSound.play();
     },
     speak() {
       if (this.word === '') {
@@ -133,11 +140,9 @@ export default {
         if (this.spellCheck(spellWord,testWord)) {
           this.word = randomWords();
           correctSound.play();
-          console.log("Correct!");
         }
         else {
           wrongSound.play();
-          console.log("Wrong!");
         }
 
         this.clear();

@@ -15,6 +15,7 @@
                             ? 2
                             : 1
                     "
+                    @click="$emit('remove', i);"
                 >
                     <tile
                         :letter="e.letter"
@@ -41,6 +42,9 @@ export default {
   },
   props: {
     spelling: { type: Array, required: true }
+  },
+  methods: {
+      //
   },
   data: () => ({
   })
