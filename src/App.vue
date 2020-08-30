@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary" dark hide-on-scroll>
       <v-img
         alt="Vuetify Logo"
         class="shrink mr-2"
