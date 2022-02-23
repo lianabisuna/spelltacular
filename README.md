@@ -1,24 +1,26 @@
-# spelltacular
 
-## Project setup
-```
-npm install
-```
+#   Spelltacular
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Spell words better with Spelltacular, perfect for kids and people who are having a hard time at spelling.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Features
 
-### Lints and fixes files
-```
-npm run lint
-```
+🐸 Random word spelling
+🍎 Word to speech
+🎩 Clear all word
+👑 Clear letter one-by-one
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Demo
+
+Can you spell words correctly? Test your skills here: https://spelltacular.netlify.app
+
+## Technologies
+
+- Vue.js (JavaScript Framework)
+- Vuetify (Design Framework)
+- SweetAlert (Icons)
+- Random Words
+- 
+## Screenshots
+
+![App Screenshot](https://github.com/lianabisuna/spelltacular/blob/master/screenshot.jpg?raw=true)
