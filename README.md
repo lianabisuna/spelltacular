@@ -24,3 +24,7 @@ Can you spell words correctly? Test your skills here: https://spelltacular.netli
 ## Screenshots
 
 ![App Screenshot](https://github.com/lianabisuna/spelltacular/blob/master/screenshot.jpg?raw=true)
+
+## Logo
+
+![App Screenshot](https://spelltacular.netlify.app/img/logo.5fe6df3a.png)
