@@ -20,7 +20,6 @@ Can you spell words correctly? Test your skills here: https://spelltacular.netli
 - Vuetify (Design Framework)
 - SweetAlert (Icons)
 - Random Words
-- 
 ## Screenshots
 
 ![App Screenshot](https://github.com/lianabisuna/spelltacular/blob/master/screenshot.jpg?raw=true)
