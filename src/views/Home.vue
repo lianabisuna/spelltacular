@@ -268,7 +268,7 @@ export default {
       {
         letter: "S",
         vowel: false,
-        image: "https://img.icons8.com/color/48/000000/--sunflower.png",
+        image: "https://img.icons8.com/color/48/000000/sunflower.png",
         alt: "sunflower"
       },
       {
